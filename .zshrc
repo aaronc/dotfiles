@@ -18,3 +18,6 @@ prompt walters
 # Emacs
 export ALTERNATE_EDITOR=""
 alias e="emacsclient -t"
+
+# xterm
+export TERM='xterm-256color'
