@@ -1,9 +1,12 @@
+set -o vi
+
+export PATH=$PATH:$HOME/bin
+
+# Git
 alias gs='git status'
 alias gsl='git status | less'
 alias gd='git diff'
 alias gdc='git diff --cached'
-
-set -o vi
 
 # Autocomplete
 fpath=(/usr/local/share/zsh-completions $fpath)
