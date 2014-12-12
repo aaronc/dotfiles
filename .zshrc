@@ -14,3 +14,7 @@ zmodload -i zsh/complist
 autoload -U promptinit
 promptinit
 prompt walters
+
+# Emacs
+export ALTERNATE_EDITOR=""
+alias e="emacsclient -t"
