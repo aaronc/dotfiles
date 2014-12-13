@@ -25,10 +25,6 @@ sudo apt-get update
 sudo apt-get install -y oracle-java8-installer
  
 # i3
-sudo apt-get update
-sudo apt-get install -y --no-install-recommends ubuntu-desktop
-sudo apt-get install -y i3 rxvt-unicode
-
 # variety wallpapers
 sudo add-apt-repository ppa:peterlevi/ppa
 sudo apt-get update
