@@ -33,15 +33,16 @@ alias e="emacsclient -t"
 export TERM='xterm-256color'
 
 # tmux
-if [[ -z "$TMUX" ]] ;then
-    ID="`tmux ls | grep ^0:`" # get the id of a deattached session
-    if [[ -z "$ID" ]] ;then # if not available create a new one
-	tmux new-session -s 0
-    else
-	# tmux new-session -t "$ID" # if available attach to it
-        tmux new-session -t 0
-    fi
-fi
+# if [[ -z "$TMUX" ]] ;then
+#     ID="`tmux ls | grep ^0:`" # get the id of a deattached session
+#     if [[ -z "$ID" ]] ;then # if not available create a new one
+# 	tmux new-session -s 0
+#     else
+# 	# tmux new-session -t "$ID" # if available attach to it
+#         tmux new-session -t 0
+#     fi
+# fi
+tmux-persist
 
  
 

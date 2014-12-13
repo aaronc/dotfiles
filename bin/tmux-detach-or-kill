@@ -1,0 +1,6 @@
+#!/bin/sh
+if tmux ls | grep "^$1:.*group"; then
+   tmux kill-session
+else
+   tmux detach 
+fi

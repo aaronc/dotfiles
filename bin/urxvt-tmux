@@ -1,1 +1,2 @@
-urxvt -e zsh -c "tmux -q has-session && exec tmux -2 attach-session -d || exec tmux -2 new-session -n$USER -s$USER@$HOSTNAME"
+#urxvt -e zsh -c "tmux -q has-session && exec tmux -2 attach-session -d || exec tmux -2 new-session -n$USER -s$USER@$HOSTNAME"
+urxvt -e tmux-persist
