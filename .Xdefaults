@@ -50,3 +50,8 @@ urxvt*color8: #666666
 urxvt.saveLines: 4095
 urxvt.iso14755: false
 !URxvt*altSendsEscape: true
+
+Urxvt.perl-ext-common: default,clipboard
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.depth: 32
+URxvt.background: [95]#000000

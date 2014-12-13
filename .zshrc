@@ -8,6 +8,12 @@ alias gsl='git status | less'
 alias gd='git diff'
 alias gdc='git diff --cached'
 
+# vcsh
+alias vcshs='vcsh dotfiles status | less'
+alias vcsha='vcsh dotfiles add'
+alias vcshc='vcsh dotfiles commit'
+alias vcshp='vcsh dotfiles push'
+
 # Autocomplete
 fpath=(/usr/local/share/zsh-completions $fpath)
 autoload -U compinit && compinit
@@ -20,6 +26,7 @@ prompt walters
 
 # Emacs
 export ALTERNATE_EDITOR=""
+export EDITOR="emacsclient -t"
 alias e="emacsclient -t"
 
 # xterm

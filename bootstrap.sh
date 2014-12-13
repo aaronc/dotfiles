@@ -18,14 +18,11 @@ cd ~/.emacs.d && git checkout develop
  
 # git
 # sudo add-apt-repository ppa:git-core/ppa
+git config --global push.default simple
  
 # java
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install -y oracle-java8-installer
  
-# i3
-# variety wallpapers
-sudo add-apt-repository ppa:peterlevi/ppa
-sudo apt-get update
-sudo apt-get install variety
+ i3
