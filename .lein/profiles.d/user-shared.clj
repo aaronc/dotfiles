@@ -1,3 +1,2 @@
-{:user-shared
- {:plugins
-  [[cider/cider-nrepl "0.8.1"]]}}
+{:plugins
+ [[cider/cider-nrepl "0.8.2"]]}

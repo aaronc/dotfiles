@@ -10,5 +10,5 @@
 # fi
 
 if [[ -z "$TMUX" ]]; then
-   tmux -q has-session -t 0 && tmux new-session -t 0 || tmux new-session -s 0
+   tmux -q has-session -t 0 && tmux -2 new-session -t 0 || tmux -2 new-session -s 0
 fi
