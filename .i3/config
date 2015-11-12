@@ -157,4 +157,5 @@ bar {
         status_command i3status
 }
 
-exec --no-startup-id compton -cCGb --backend glx --vsync opengl
+# exec --no-startup-id compton -cCGb --backend glx --vsync opengl
+# exec --no-startup-id xrandr --output VGA-0 --auto --left-of VGA-1
