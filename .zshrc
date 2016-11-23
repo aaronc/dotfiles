@@ -1,6 +1,6 @@
 set -o vi
 
-export PATH=$PATH:$HOME/bin:$HOME/.cabal/bin
+source ~/.profile
 
 # Git
 alias gs='git status'
@@ -46,6 +46,13 @@ tmux-persist
 
  
 #export BOOT_JVM_OPTIONS="-Xmx2g -client -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -XX:MaxPermSize=128m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xverify:none -XX:-OmitStackTraceInFastThrow -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
-export BOOT_JVM_OPTIONS="-Xmx2g -client -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xverify:none -XX:-OmitStackTraceInFastThrow"
+export BOOT_JVM_OPTIONS="-Xmx16g -client -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xverify:none -XX:-OmitStackTraceInFastThrow"
 
 export ELM_HOME=/usr/local/lib/node_modules/elm/share
+
+export HISTSIZE=1000
+
+eval $(ssh-agent)
+ssh-add
+
+#source /usr/share/nvm/init-nvm.sh
